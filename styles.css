@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url("static/Norse-Bold.otf") format(opentype);
+}
+
+body {
+  background: url("static/rohit-tandon-9wg5jCEPBsw-unsplash.jpg") 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.left > .title {
+  font-family: Norse-Bold;
+}
+
+.right {
+  background-color: #eee;
+}
