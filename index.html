@@ -27,35 +27,46 @@
         </div>
       </div>
       <div class="right">
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams.
-        </p>
-        <p>Sign up now to get started</p>
+        <h2 class="title">
+          This is not a real online service! You know you need something
+          <br />like this in your life to help you realize your deepest dreams.
+          <br />
+          Sign up now to get started.
+        </h2>
+        <h2>You know you want to.</h2>
         <br />
-        <p>You know you want to.</p>
         <form id="create-account" action="">
-          <div class="form-row">
-            <label for="first-name">First Name</label
-            ><input type="text" id="first-name" name="first-name" />
-            <label for="last-name">Last Name</label
-            ><input type="text" id="last-name" name="last-name" />
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label
-            ><input type="email" name="email" id="email" />
-            <label for="phone">Phone Number</label
-            ><input type="tel" name="phone" id="phone" />
-          </div>
-          <div class="form-row">
-            <label for="password">Password</label
-            ><input type="password" name="password" id="password" />
-            <label for="confirm-password">Confirm Password</label
-            ><input
-              type="password"
-              name="confirm-password"
-              id="confirm-password"
-            />
+          <h2>Let's do this!</h2>
+          <div class="form-items">
+            <div class="form-item">
+              <label for="first-name">First Name</label
+              ><input type="text" id="first-name" name="first-name" />
+            </div>
+            <div class="form-item">
+              <label for="last-name">Last Name</label
+              ><input type="text" id="last-name" name="last-name" />
+            </div>
+            <div class="form-item">
+              <label for="email">Email</label
+              ><input type="email" name="email" id="email" />
+            </div>
+            <div class="form-item">
+              <label for="phone">Phone Number</label
+              ><input type="tel" name="phone" id="phone" />
+            </div>
+            <div class="form-item">
+              <label for="password">Password</label
+              ><input type="password" name="password" id="password" required />
+            </div>
+            <div class="form-item">
+              <label for="confirm-password">Confirm Password</label
+              ><input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
           </div>
         </form>
         <button type="submit" form="create-account">Create Account</button>

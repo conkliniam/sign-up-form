@@ -1,3 +1,11 @@
+:root {
+  --theme-blue: rgb(65, 109, 177);
+  --dark-gray: #3f3f3f;
+  --light-gray: #ccc;
+  --error-red: rgb(255, 64, 64);
+  --form-margin: 35px;
+}
+
 @font-face {
   font-family: Norse-Bold;
   src: url("static/Norse-Bold.otf") format(opentype);
@@ -9,6 +17,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
@@ -16,7 +25,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
-  width: min(1400px, 100%);
+  width: min(1300px, 100%);
 }
 
 .left,
@@ -73,4 +82,82 @@ body {
 
 .left {
   flex: 3;
+}
+
+.right a {
+  color: var(--theme-blue);
+}
+
+.right > .title {
+  margin-top: 15vh;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-left: var(--form-margin);
+  font-weight: 550;
+}
+
+form {
+  background-color: white;
+  box-shadow: 0 5px 5px var(--light-gray);
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+form > h2 {
+  color: var(--dark-gray);
+}
+
+.form-items {
+  margin-left: var(--form-margin);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  margin: 0px 60px 30px 0px;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+input {
+  width: 200px;
+  border-radius: 5px;
+  border: 1.5px solid var(--light-gray);
+  font-size: 1rem;
+  color: var(--dark-gray);
+  padding: 5px 10px;
+}
+
+input:focus {
+  box-shadow: 5px 5px 5px var(--light-gray);
+}
+
+input:invalid {
+  border-color: var(--error-red);
+}
+
+button {
+  background: var(--theme-blue);
+  color: white;
+  margin-left: var(--form-margin);
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+  height: 40px;
+  font-size: 1rem;
+}
+
+button + p {
+  font-size: 1rem;
+  margin-left: var(--form-margin);
 }
